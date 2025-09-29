@@ -1,5 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  ssr: false,
+  typescript: { strict: true },
+  css: ['vuetify/styles', '@/assets/main.css'],
+  build: {
+    transpile: ['vuetify']
+  },
+  modules: [],
+  vite: {
+    define: { 'process.env.DEBUG': false }
+  }
 })
