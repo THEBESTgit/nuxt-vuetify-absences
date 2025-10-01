@@ -1,14 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
-  ssr: false,
-  typescript: { strict: true },
-  css: ['vuetify/styles', '@/assets/main.css'],
+  devtools: { enabled: true },
+  css: [
+    'vuetify/lib/styles/main.sass',
+    '@mdi/font/css/materialdesignicons.min.css',
+    '~/assets/main.css'
+  ],
   build: {
-    transpile: ['vuetify']
+    transpile: ['vuetify'],
   },
-  modules: [],
   vite: {
-    define: { 'process.env.DEBUG': false }
+    define: {
+      'process.env.DEBUG': false,
+    },
+  },
+  modules: [
+    '@pinia/nuxt'
+  ],
+  typescript: {
+    typeCheck: false,
+    strict: false
   }
 })
+
