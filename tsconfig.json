@@ -1,18 +1,22 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "files": [],
-  "references": [
-    {
-      "path": "./.nuxt/tsconfig.app.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.server.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.shared.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.node.json"
-    }
-  ]
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vuetify", "vite/client", "node"]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "plugins/**/*.ts",
+    "components/**/*.vue",
+    "composables/**/*.ts",
+    "types/**/*.d.ts",
+    "stores/**/*.ts",
+    "pages/**/*.vue"
+  ],
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }
