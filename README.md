@@ -22,28 +22,10 @@ bash
 ```
 The application will be available at http://localhost:3000
 
-📁 Project Structure
-text
-nuxt-vuetify-absences/
-├── components/           # Reusable Vue components
-│   ├── AbsenceTable.vue          # Main calendar table
-│   ├── AbsenceDialog.vue         # Absence management dialog
-│   └── VirtualScrollContainer.vue # Virtual scrolling component
-├── composables/          # Composition API logic
-│   └── useAbsenceStore.ts        # Global state management
-├── types/                # TypeScript definitions
-│   └── absence.ts                # Employee and Absence interfaces
-├── pages/                # Application pages
-│   └── index.vue                 # Main application page
-├── plugins/              # Vue plugins
-│   └── vuetify.ts                # Vuetify configuration
-├── assets/               # Static assets
-│   └── main.css                  # Global styles
-├── nuxt.config.ts        # Nuxt configuration
-├── package.json          # Dependencies and scripts
-└── tsconfig.json         # TypeScript configuration
 🎯 Key Features
+
 ✅ Core Functionality
+
 Full-year absence table with employees listed vertically and dates horizontally
 
 Intuitive cell coloring system:
@@ -107,21 +89,33 @@ Interactive elements with proper visual feedback
 Accessibility considerations in component design
 
 📋 Technical Requirements Fulfilled
+
 Requirement	Implementation Status
+
 Vue.js with Nuxt framework	✅ Fully implemented
+
 Vuetify for UI components	✅ Complete integration
+
 TypeScript codebase	✅ 100% TypeScript
+
 Virtual scrolling (both directions)	✅ Custom implementation
+
 Cell color coding	✅ Red/Green/Gray system
+
 Absence management dialog	✅ Full CRUD operations
+
 Real-time updates	✅ Reactive state management
+
 Responsive design	✅ Mobile-first approach
+
 Modular component structure	✅ SFC architecture
+
 GraphQL-ready data structure	✅ Prepared for integration
 
 🔧 Technical Decisions
 
 Architecture Choices
+
 Nuxt 3 for modern Vue.js development with built-in optimizations
 
 Composition API for better logic reuse and TypeScript integration
@@ -140,6 +134,7 @@ Optimized date calculations for quick absence lookups
 CSS transforms for smooth scrolling animations
 
 🎨 UI/UX Features
+
 Sticky headers and employee names for easy navigation
 
 Today highlighting for quick orientation
@@ -172,23 +167,13 @@ Modular component design following Vue best practices
 Proper separation of concerns between UI and business logic
 
 📞 Contact
+
 Victor Vera
+
 Frontend Developer
+
 📧 Email: victorverazambrana@gmail.com
+
 🔗 GitHub: https://github.com/THEBESTgit
 
-```bash
-# npm
-npm run preview
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
